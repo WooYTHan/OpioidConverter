@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OpioidConverterTest/ThirdViewController.swift"
+            timestampString = "527383968.453249"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OpioidConverterTest/SixthViewController.swift"
+            timestampString = "526931379.706782"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OpioidConverterTest/SixthViewController.swift"
+            timestampString = "526930314.935645"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "SixthViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OpioidConverterTest.SixthViewController.items.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "OpioidConverterTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marcholtsman/Documents/OpioidConverter/OpioidConverter/OpioidConverterTest/SixthViewController.swift"
+                  timestampString = "526930315.925013"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OpioidConverterTest.SixthViewController.items.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "OpioidConverterTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marcholtsman/Documents/OpioidConverter/OpioidConverter/OpioidConverterTest/SixthViewController.swift"
+                  timestampString = "526930315.932868"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OpioidConverterTest.SixthViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; OpioidConverterTest.SixthViewController"
+                  moduleName = "OpioidConverterTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marcholtsman/Documents/OpioidConverter/OpioidConverter/OpioidConverterTest/SixthViewController.swift"
+                  timestampString = "526930315.935197"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OpioidConverterTest.SixthViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;OpioidConverterTest.SixthViewController&gt;"
+                  moduleName = "OpioidConverterTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marcholtsman/Documents/OpioidConverter/OpioidConverter/OpioidConverterTest/SixthViewController.swift"
+                  timestampString = "526930315.937687"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "113">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

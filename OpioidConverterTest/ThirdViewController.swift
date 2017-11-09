@@ -19,6 +19,9 @@ class ThirdViewController: UIViewController,UITableViewDelegate, UITableViewData
     @IBOutlet weak var cntAnother: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var tapering: UIButton!
+    
+    
     var recivedDrug = [[Any]]()
     var D4 = [Double]()
     
@@ -63,6 +66,8 @@ class ThirdViewController: UIViewController,UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         self.navigationItem.title = "RESULT"
         cntAnother.layer.cornerRadius = 10
+        tapering.layer.cornerRadius = 10
+        
         for i in 0..<recivedDrug[0].count{
             recivedNum = recivedDrug[2][i] as! Double
             recivedDose = recivedDrug[1][i] as! String
@@ -101,7 +106,12 @@ class ThirdViewController: UIViewController,UITableViewDelegate, UITableViewData
             self.tableView.delegate = self
             self.tableView.dataSource = self
             
-            self.tableView.rowHeight = 35.0
+            
+            self.tableView.rowHeight = UITableViewAutomaticDimension
+            self.tableView.estimatedRowHeight = 25
+            
+            self.tableView.contentInset = UIEdgeInsets(top: 0,left: 0,bottom: 0,right: 0)
+            //self.tableView.rowHeight = 42.0
             self.tableView.tableFooterView = UIView()
             
             self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -130,7 +140,7 @@ class ThirdViewController: UIViewController,UITableViewDelegate, UITableViewData
  
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.font = UIFont(name:"Avenir", size:12)
+        cell.textLabel?.font = UIFont(name:"Avenir", size:13)
         cell.textLabel?.textColor = UIColor.gray
         
         let drugName = recivedDrug[0][indexPath.row] as? String

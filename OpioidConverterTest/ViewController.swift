@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate,UITableViewDelegate, UITableViewDataSource{
+class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate,UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate{
     
     var Analgesic = "Morphine"
     var DoseName = "PO"
@@ -20,6 +20,7 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
      var pickerDataSource = [["Morphine", "Hydrocodone", "Oxycodone", "Oxymorphone", "Hydromorphone","Codeine","Meperidine", "Methadone", "Fentanyl"],["PO", "IV","Transdermal"]]
 
     //var table1Data = [String]()
+    @IBOutlet weak var textField: UITextField!
    
     @IBOutlet weak var tableView: UITableView!
     
@@ -29,52 +30,10 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
  
     @IBOutlet weak var nextStep: UIButton!
     
-    @IBOutlet weak var addButton: UIButton!
-    @IBAction func addNew(_ sender: UIButton) {
-        if let text = Dose.text, !text.isEmpty
-        {
-            Number = Double((Dose?.text!)!)!
-        }
-        else
-        {
-            Number = 0
-        }
-        
-        func saveDrugs(){
-            D1.append(Analgesic)
-            D2.append(DoseName)
-            D3.append(Number)
-
-            DispatchQueue.main.async{
-                self.tableView.reloadData()
-            }
-
-            Analgesic = "Morphine"
-            DoseName = "PO"
-               
-            Name.selectRow(0, inComponent: 0, animated: true)
-            Name.selectRow(0, inComponent: 1, animated: true)
-            Dose.text = ""
-            
-            
-        }
-        if(Number <= 0){
-            let alertController = UIAlertController(title: "Number is invalid", message: "", preferredStyle: UIAlertControllerStyle.alert)
-            
-            // Replace UIAlertActionStyle.Default by UIAlertActionStyle.default
-            let okAction = UIAlertAction(title: "Continue", style: UIAlertActionStyle.default) {
-                (result : UIAlertAction) -> Void in
-            }
-            
-            alertController.addAction(okAction)
-            self.present(alertController, animated: true, completion: nil)
-        }
-        else{
-            saveDrugs()
-        }
-    }
-   
-     override func didReceiveMemoryWarning() {
+    
+    @IBOutlet weak var tapering: UIButton!
+    
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
@@ -94,13 +53,16 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
+        self.textField.delegate = self
+        
         self.tableView.rowHeight = 28.0
         self.tableView.tableFooterView =  UIView()
         
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        
-        addButton.layer.cornerRadius = 10
+    
         nextStep.layer.cornerRadius = 10
+        
+        tapering.layer.cornerRadius = 10
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -122,6 +84,20 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
             let drugName = D1[row]
             let drugAnl = D2[row]
     
+    let button : UIButton = UIButton(type:UIButtonType.custom) as UIButton
+    button.tag = row
+    button.frame = CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: 18, height: 18))
+    
+    button.center = CGPoint(x: view.bounds.width/1.4, y: 28 / 2.0)
+    //button.backgroundColor = UIColor.red
+    
+    let btnImage = UIImage(named: "round-delete-button")
+    button.setImage(btnImage , for: UIControlState.normal)
+    button.addTarget(self, action: #selector(buttonClicked), for: UIControlEvents.touchUpInside)
+    //button.setTitle("Click Me !", for: UIControlState.normal)
+    
+    cell.addSubview(button)
+    
             cell.textLabel?.text = String(describing: Double(round(1000 * drugAmount)/1000)) + " mg " + drugName + " " + drugAnl
     
             return cell
@@ -130,23 +106,63 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
         return true
     }
     
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let delete = UITableViewRowAction(style: .normal, title: "Delete") { (action, indexPath) in
-            
-            self.D1.remove(at: indexPath.row)
-            self.D2.remove(at: indexPath.row)
-            self.D3.remove(at: indexPath.row)
-            
-            tableView.deleteRows(at: [indexPath], with: .fade)
-            // delete item at indexPath
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if let text = Dose.text, !text.isEmpty
+        {
+            Number = Double((Dose?.text!)!)!
+        }
+        else
+        {
+            Number = 0
         }
         
-        delete.backgroundColor = UIColor(red: 1.0/255, green: 175.0/255, blue: 204.0/255, alpha: 1.0)
-       
-        
-        return [delete]
+        func saveDrugs(){
+            D1.append(Analgesic)
+            D2.append(DoseName)
+            D3.append(Number)
+            
+            DispatchQueue.main.async{
+                self.tableView.reloadData()
+            }
+            
+            Analgesic = "Morphine"
+            DoseName = "PO"
+            
+            Name.selectRow(0, inComponent: 0, animated: true)
+            Name.selectRow(0, inComponent: 1, animated: true)
+            Dose.text = ""
+            
+            
+        }
+        if(Number <= 0){
+            let alertController = UIAlertController(title: "Number is invalid", message: "", preferredStyle: UIAlertControllerStyle.alert)
+            
+            // Replace UIAlertActionStyle.Default by UIAlertActionStyle.default
+            let okAction = UIAlertAction(title: "Continue", style: UIAlertActionStyle.default) {
+                (result : UIAlertAction) -> Void in
+            }
+            
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        else{
+            saveDrugs()
+        }
+
     }
 
+       
+    func buttonClicked(sender: AnyObject) {
+        let button = sender as! UIButton
+        self.D1.remove(at: button.tag)
+        self.D2.remove(at: button.tag)
+        self.D3.remove(at: button.tag)
+        let indexPath = IndexPath(row: button.tag, section: 0)
+        tableView.deleteRows(at: [indexPath], with: .fade)
+        self.tableView?.reloadData()
+    }
+   
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

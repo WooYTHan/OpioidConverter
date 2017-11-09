@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2200D9DBA7472BF9C16755B2 /* Pods_OpioidConverterTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0344A56453F42C49901A07 /* Pods_OpioidConverterTest.framework */; };
 		3410EE6A1E63D5C9003175AF /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3410EE671E63D5C9003175AF /* Podfile */; };
+		342F57A51F7EF9F100EAC7D9 /* round-delete-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 342F57A41F7EF9F100EAC7D9 /* round-delete-button.png */; };
+		342F57A71F7F011800EAC7D9 /* DiPi_Profile-Icon_bw.png in Resources */ = {isa = PBXBuildFile; fileRef = 342F57A61F7F011800EAC7D9 /* DiPi_Profile-Icon_bw.png */; };
 		3433B16B1E30383100976628 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3433B16A1E30383100976628 /* ViewController.swift */; };
 		3433B16E1E30383100976628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3433B16C1E30383100976628 /* Main.storyboard */; };
 		3433B1711E30383100976628 /* OpioidConverterTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3433B16F1E30383100976628 /* OpioidConverterTest.xcdatamodeld */; };
@@ -23,8 +25,8 @@
 		3461300F1E55211B00C84382 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3461300E1E55211B00C84382 /* FourthViewController.swift */; };
 		346130111E56454D00C84382 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346130101E56454D00C84382 /* FifthViewController.swift */; };
 		3488AACF1F7DFB0900852AA4 /* ConvApp_Icons.png in Resources */ = {isa = PBXBuildFile; fileRef = 3488AACE1F7DFB0900852AA4 /* ConvApp_Icons.png */; };
-		3488AAD21F7DFD3C00852AA4 /* dipi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3488AAD01F7DFD3C00852AA4 /* dipi.jpeg */; };
 		3488AAD31F7DFD3C00852AA4 /* midicalCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3488AAD11F7DFD3C00852AA4 /* midicalCenter.png */; };
+		34F22ED81F817AFA00A20513 /* taperingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F22ED71F817AFA00A20513 /* taperingViewController.swift */; };
 		6AF728F31F64AB4E002526FE /* customTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF728F21F64AB4E002526FE /* customTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		3410EE561E63D1B9003175AF /* OpioidConverterTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpioidConverterTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3410EE571E63D1B9003175AF /* OpioidConverterTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpioidConverterTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3410EE671E63D5C9003175AF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		342F57A41F7EF9F100EAC7D9 /* round-delete-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "round-delete-button.png"; path = "../../../Downloads/round-delete-button.png"; sourceTree = "<group>"; };
+		342F57A61F7F011800EAC7D9 /* DiPi_Profile-Icon_bw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DiPi_Profile-Icon_bw.png"; path = "../../../Downloads/DiPi_Profile-Icon_bw.png"; sourceTree = "<group>"; };
 		3433B16A1E30383100976628 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3433B16D1E30383100976628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3433B1701E30383100976628 /* OpioidConverterTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpioidConverterTest.xcdatamodel; sourceTree = "<group>"; };
@@ -66,8 +70,8 @@
 		3461300E1E55211B00C84382 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		346130101E56454D00C84382 /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		3488AACE1F7DFB0900852AA4 /* ConvApp_Icons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ConvApp_Icons.png; path = ../../ConvApp_Icons.png; sourceTree = "<group>"; };
-		3488AAD01F7DFD3C00852AA4 /* dipi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dipi.jpeg; path = ../../dipi.jpeg; sourceTree = "<group>"; };
 		3488AAD11F7DFD3C00852AA4 /* midicalCenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = midicalCenter.png; path = ../../midicalCenter.png; sourceTree = "<group>"; };
+		34F22ED71F817AFA00A20513 /* taperingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = taperingViewController.swift; sourceTree = "<group>"; };
 		6A166AA61F5F02D80055D67D /* OpioidConverterTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpioidConverterTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF728F21F64AB4E002526FE /* customTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customTableViewCell.swift; sourceTree = "<group>"; };
 		8807FE2C2A8964293F6F13A9 /* Pods-OpioidConverterTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpioidConverterTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpioidConverterTest/Pods-OpioidConverterTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,11 +125,13 @@
 			children = (
 				34612FEA1E4A40F600C84382 /* OpioidConverterTest */,
 				345EEA701F6856EE0017F658 /* SecondViewController.swift */,
+				34F22ED71F817AFA00A20513 /* taperingViewController.swift */,
+				342F57A41F7EF9F100EAC7D9 /* round-delete-button.png */,
 				3488AACE1F7DFB0900852AA4 /* ConvApp_Icons.png */,
 				344B223C1F7C912D0018D3DC /* PillButton.png */,
 				3461300E1E55211B00C84382 /* FourthViewController.swift */,
 				346130101E56454D00C84382 /* FifthViewController.swift */,
-				3488AAD01F7DFD3C00852AA4 /* dipi.jpeg */,
+				342F57A61F7F011800EAC7D9 /* DiPi_Profile-Icon_bw.png */,
 				3488AAD11F7DFD3C00852AA4 /* midicalCenter.png */,
 				3433B16A1E30383100976628 /* ViewController.swift */,
 				3461300A1E4A4ABB00C84382 /* ThirdViewController.swift */,
@@ -294,9 +300,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3488AAD31F7DFD3C00852AA4 /* midicalCenter.png in Resources */,
+				342F57A71F7F011800EAC7D9 /* DiPi_Profile-Icon_bw.png in Resources */,
 				3410EE6A1E63D5C9003175AF /* Podfile in Resources */,
 				344B223D1F7C912D0018D3DC /* PillButton.png in Resources */,
-				3488AAD21F7DFD3C00852AA4 /* dipi.jpeg in Resources */,
+				342F57A51F7EF9F100EAC7D9 /* round-delete-button.png in Resources */,
 				3433B1761E30383100976628 /* LaunchScreen.storyboard in Resources */,
 				3433B1731E30383100976628 /* Assets.xcassets in Resources */,
 				3488AACF1F7DFB0900852AA4 /* ConvApp_Icons.png in Resources */,
@@ -379,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34F22ED81F817AFA00A20513 /* taperingViewController.swift in Sources */,
 				3461300F1E55211B00C84382 /* FourthViewController.swift in Sources */,
 				3433B1711E30383100976628 /* OpioidConverterTest.xcdatamodeld in Sources */,
 				346130031E4A428000C84382 /* AppDelegate.swift in Sources */,

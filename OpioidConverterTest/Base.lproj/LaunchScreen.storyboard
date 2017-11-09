@@ -25,12 +25,8 @@
                                 <rect key="frame" x="125" y="218" width="125" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dipi.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="3rf-9J-7EH">
-                                <rect key="frame" x="136" y="587" width="102" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="midicalCenter.png" translatesAutoresizingMaskIntoConstraints="NO" id="eJB-gm-H8C">
-                                <rect key="frame" x="136" y="539" width="102" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiPi_Profile-Icon_bw.png" translatesAutoresizingMaskIntoConstraints="NO" id="3rf-9J-7EH">
+                                <rect key="frame" x="134" y="561" width="106" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Opioid Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UJ-qj-Aht">
@@ -40,6 +36,10 @@
                                 <color key="textColor" red="0.3138124942779541" green="0.65369176864624023" blue="0.86106979846954346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="midicalCenter.png" translatesAutoresizingMaskIntoConstraints="NO" id="eJB-gm-H8C">
+                                <rect key="frame" x="136" y="523" width="102" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99963942309999998" green="0.99963942309999998" blue="0.99963942309999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -51,7 +51,7 @@
     </scenes>
     <resources>
         <image name="ConvApp_Icons.png" width="179" height="178"/>
-        <image name="dipi.jpeg" width="399" height="239"/>
+        <image name="DiPi_Profile-Icon_bw.png" width="2500" height="2500"/>
         <image name="midicalCenter.png" width="400" height="126"/>
     </resources>
 </document>
